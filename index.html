@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>StatusPage User Guide</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <script src="https://use.fontawesome.com/972fb43a53.js"></script>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img id="logo" src="https://dka575ofm4ao0.cloudfront.net/assets/base/logos/atlassian-statuspage-dark-0b572738d997f33cdeea5d8fe63ab501.svg" alt="Atlassian statuspage dark" />
+      <nav class="site-nav">
+        <ul>
+        <a href="https://statuspage.io/tour">Features</a>
+        <a href="https://statuspage.io/pricing">Pricing</a>
+        <a href="https://statuspage.io/customers">Customers</a>
+        <a href="https://statuspage.io/enterprise">Enterprise</a>
+        <a href="https://manage.statuspage.io/">Log In</a>
+      </ul>
+      </nav>
+      <i class="fa fa-bars hamburger fixed-nav" aria-hidden="true"></i>
+      <div class="hamburger-nav fixed-nav">
+        <li><a href="https://statuspage.io/">Home</a></li>
+        <li><a href="#basics">Basics</a></li>
+        <li><a href="#setup">Setting Up</a></li>
+        <li><a href="#managing">Managing</a></li>
+        <li><a href="#automating">Automating</a></li>
+      </div>
+    </div>
+    <nav class="guide-nav">
+      <ul>
+        <li id="basics-jump"><a href="#basics"><i class="fa fa-life-ring fa-2x" aria-hidden="true"></i><br/>Basics</a></li>
+        <li id="setup-jump"><a href="#setup"><i class="fa fa-paint-brush fa-2x" aria-hidden="true"></i><br/>Setting Up</a></li>
+        <li id="managing-jump"><a href="#managing"><i class="fa fa-wrench fa-2x" aria-hidden="true"></i><br/>Managing</a></li>
+        <li id="automating-jump"><a href="#automating"><i class="fa fa-cogs fa-2x" aria-hidden="true"></i><br/>Automating</a></li>
+      </ul>
+    </nav>
+    <section id="intro">
+      <h1>User Guide</h1>
+      <h2>Introduction</h2>
+      <p>This guide is meant to be a one-stop shop for a high-level overview of StatusPage. We hope this helps new and potential users get familiar with our product, and discover new ways of using StatusPage. You'll find links to more detailed knowledge base articles embedded throughout this guide.</p>
+    </section>
+  </header>
+  <hr>
+
+  <section>
+    <h2>StatusPage Basics</h2><a class="anchor" id="basics"></a>
+    <h3>Teams that use StatusPage</h3>
+    <p class="preface">Support teams, ops teams, and IT teams use StatusPage to communicate incidents and outages. Bring your team together and focus on the important things using StatusPage.</p>
+    <div class="flex_container">
+      <div class="col-1-3 basics-1">
+        <p><strong>Support Teams</strong> - Deflect support tickets by using StatusPage to communicate with your customers when you're down. Don't leave your customers in the dark and don't bog down your support team with repeat tickets. This leads to angry customers, and a burnt out support team.</p>
+      </div>
+      <div class="col-1-3 basics-2">
+        <p><strong>Operations Teams</strong> - Pipe your performance metrics and system status into StatusPage so your team has a dedicated place to reference any time.</p>
+      </div>
+      <div class="col-1-3 basics-3">
+        <p><strong>IT Teams</strong> - Employees and students are becoming more and more dependent on workplace/school technology. Keep them in the loop when servers and systems are down.</p>
+      </div>
+    </div>
+    <h3>How to roll out StatusPage</h3>
+    <p class="preface">Set expectations with your team, and communicate with your customers so they know what's coming.</p>
+    <div class="flex_container">
+      <div class="col-1-4">
+        <p><strong>Define Your Audience</strong> - Make sure you know how you intend to use StatusPage. Is this for internal or external communication? Should everyone receive the same updates or do certain issues only affect certain end users.</p>
+      </div>
+      <div class="col-1-4">
+        <p><strong>Rally The Troops</strong> - Define which team(s) and roles own the StatusPage. This is crucial for initial implementation and longevity. Better to sort this out Day 1, before the first live incident.</p>
+      </div>
+      <div class="col-1-4">
+        <p><strong>Adopt a Culture of Transparency</strong> - Gone are the days when downtime was something you kept hush hush. Customers expect a certain level of transparency these days. Read up on the <a target="_blank" href="https://en.wikipedia.org/wiki/Service_recovery_paradox">Service Recovery Paradox</a>.</p>
+      </div>
+      <div class="col-1-4">
+        <p><strong>Embed your System Status in-app</strong> - Using our Status Widget, you can embed your system status directly in your website, app, or help center. Anytime an incident is posted, a banner will surface on your site.</p>
+      </div>
+    </div>
+    <h3>Public page vs. private page</h3>
+    <p class="preface">Public status pages are for communicating with external customers. Private status pages are for communicating internally with employees and stakeholders.</p>
+    <div class="flex_container">
+      <div class="col-1-2">
+        <p><strong>Public Page Functionality</strong> - Public pages are viewable by anyone with an internet connection. No authentication is required. Here are some examples, <a target="_blank"  href="https://status.dropbox.com/">status.dropbox.com</a>, <a target="_blank" href="https://status.twilio.com/">status.twilio.com</a>, <a target="_blank" href="https://status.newrelic.com/">status.newrelic.com.</a></p>
+      </div>
+      <div class="col-1-2">
+        <p><strong>Private Page Functionality</strong> - Private pages are hidden behind authentication. Page viewers must login with credentials in order to view the page. We support SAML 2.0 and Google Auth for private pages. <a target="_blank" href="https://statuspage.groovehq.com/knowledge_base/topics/page-privacy">Details on private pages</a>.</p>
+      </div>
+    </div>
+    <div class="inset">
+      <h3>Quick Start</h3>
+      <p class="preface">You can be up and running with a new status page in a matter of minutes.</p>
+      <p><strong>Create Components</strong> - Components are the functioning pieces of your website or application such as your API, mobile app, help center, and admin tool. Head over to the 'Components' tab to create your components. <a target="_blank" href="https://statuspage.groovehq.com/knowledge_base/topics/overview-1">Details on components</a>.</p>
+      <p><strong>Backfill Historical Incidents</strong> - If you're migrating to StatusPage from another tool, you can add your previous incidents as a "Backfilled Incident". <a target="_blank" href="http://help.statuspage.io/knowledge_base/topics/backfilling-old-incidents">Details on backfilling</a>.</p>
+      <p><strong>Invite a Team Member</strong> - Recruit others to help. Invite your support team, ops team, or others so they can also update the status page when things go wrong. Invite team members from the 'Team Members' tab.</p>
+      <p><strong>Subscribe to Incident Updates</strong> - Click "view status page" from the top navigation when signed in and click the "Subscribe" button on the page. Updates to incidents will be sent out to all subscribers. (more on subscribers below)</p>
+      <p><strong>Create a test incident</strong> - From within the "Dashboard" tab in the left hand navigation you can create a test incident. Give it a title, a brief message and leave it in the "Investigating" stage. Once you click "Create Incident" an incident will be posted on your status page and a notification sent to your test subscriber. (more on incidents below)</p>
+    </section>
+  </div>
+  <hr>
+
+  <section>
+    <h2>Setting Up StatusPage</h2><a class="anchor" id="setup"></a>
+    <h3>Your account</h3>
+    <p class="preface">Head to the "Manage Account" section to configure global settings like your timezone, service name, Google Analytics tracking, notifications, and billing info.</p>
+    <p><strong>Service Name</strong> - This is the name we use in SMS and Email notifications. Usually it's the name of your company or product.</p>
+    <p><strong>Notifications</strong> - Turn on/off notifications such as long-running incidents, billing receipts, and issues with external accounts used for integrations. <a target="_blank" href="https://statuspage.groovehq.com/knowledge_base/topics/personal-info">Details on account notifications</a>.</p>
+    <p><strong>Google Analytics Tracking</strong> - Measure traffic to your page by inputting a Google Analytics tracking code. <a target="_blank" href="https://statuspage.groovehq.com/knowledge_base/topics/basic-account-information">Details on tracking</a>.</p>
+    <p><strong>Configure an Invoice Recipient</strong> - Your accounting team will probably want receipts. Set their email address as an invoice recipient. <a target="_blank" href="https://statuspage.groovehq.com/knowledge_base/topics/change-billing-email-address">Details on receipts</a>.</p>
+    <div class="flex_container">
+      <div class="col-1-2" id="components">
+        <h3>Components</h3>
+        <p class="preface">Components allow you to be more granular with reporting your system status. They are the functioning pieces of your application. If you want, you can automate your components, or surface a third-party component on your page.</p>
+        <p><strong>Component Groups</strong> - Keep your page organized and easy to navigate by grouping similar components together under an expandable Component Group.</p>
+        <p><strong>Component Automation</strong> - Automatically update the status of your components using email automation, our API, or one of our integrations.</p>
+        <p><strong>Third-party Components</strong> - If your service is heavily dependent on a third-party service, you can surface that component (as long as we offer it) on your own status page. <a target="_blank" href="https://statuspage.groovehq.com/knowledge_base/categories/components">Details on components</a>.</p>
+      </div>
+      <div class="col-1-2" id="incidents">
+        <h3>Incidents</h3>
+        <p class="preface">Incidents are the best way to communicate with your customers during downtime. To keep your customers in the loop, add an incident to your page and post updates until it's resolve.</p>
+        <p><strong>Scheduled Maintenance</strong> - Let your customers know ahead of time when you're going to be unavailable due to maintenance. Scheduled maintenances appear on your status page and also send a notification to subscribers. <a target="_blank" href="https://statuspage.groovehq.com/knowledge_base/topics/scheduled-maintenance">Details on maintenance</a>.</p>
+        <p><strong>Incident Templates</strong> - Be prepared for downtime by writing incident templates you can use to auto fill when creating a live incident. <a target="_blank" href="https://statuspage.groovehq.com/knowledge_base/topics/incident-templates">Details on templates</a>.</p>
+        <p><strong>Postmortems</strong> - After a major incident is resolved, you can create a postmortem to explain what happened. Postmortems should include an apology, understanding of what happened, and a remediation plan. Postmortems will be published within the incident, and can notify your subscribers. <a target="_blank" href="https://statuspage.groovehq.com/knowledge_base/topics/postmortems">Details on postmortems</a>.</p>
+      </div>
+    </div>
+    <h3>Public Metrics</h3>
+    <p class="preface">We believe in being transparent with customers. Use Public Metrics to display real-time data such as response time and uptime. Metrics can be created using our API, or through a third-party data source we integrate with.</p>
+    <p><strong>Example Metrics</strong> - Some common metrics we see are API response time, server uptime, average time an outbound request sits in a queue, current exception rate of all requests, and average first reply time on customer support requests. <a target="_blank" href="https://statuspage.groovehq.com/knowledge_base/topics/introduction-1">Details on metrics</a>.</p>
+    <p><strong>Adding a Metric Using Third-Party Data Sources</strong> - If you have data in Pingdom, New Relic, Librato, or Datadog, we have integrations with each of those services and you can easily get that data flowing into StatusPage as a Public Metric. <a target="_blank" href="https://statuspage.groovehq.com/knowledge_base/categories/public-metrics">Details on 3rd party metrics</a>.</p>
+    <p><strong>Adding a Custom Metric</strong> - If your data is not in one of the above third-party services, you can create metric data using our API.</p>
+  </section>
+  <hr>
+
+  <section>
+    <h2>Managing your StatusPage</h2><a class="anchor" id="managing"></a>
+    <div class="flex_container">
+      <div class="col-1-2" id="subscribers">
+        <h3>Subscribers</h3>
+        <p class="preface">StatusPage can send out notifications to your customers via Email or SMS when you create or update incidents. All you have to do is make sure the incident is created, we'll handle notifying the people who need to know about it.</p>
+        <p><strong>Manually Adding Subscribers</strong> - If you already have a list of emails or phone numbers, you can import them as subscribers using a CSV or by adding individual subscribers manually. <a target="_blank" href="https://statuspage.groovehq.com/knowledge_base/topics/importing-subscribers-via-csv">Details on CSV import</a>.</p>
+        <p><strong>Sync Subscribers with our API</strong> - Use our API to pragmatically create subscribers based on events or actions in another system. <a target="_blank" href="http://doers.statuspage.io/api/v1/subscribers/">More on subscriber API</a>.</p>
+        <p><strong>Self-service Signup</strong> - As long as you have Email and/or SMS subscriptions enabled, anyone who visits your page can subscribe to updates by clicking the "Subscribe to Updates" button.</p>
+        <p><strong>Component Subscriptions</strong> - Component subscriptions ensure your subscribers are only getting notified about the things they care about. To enable this feature, you must be on the Business, Growth, or Corporate plan. <a target="_blank" href="https://statuspage.groovehq.com/knowledge_base/topics/component-subscriptions">Details on component subscriptions</a>.</p>
+        <p><strong>Webhook Subscriptions</strong> - Anyone can subscribe to your status page to receive a webhook notification when you post/update an incident and when components are updated. <a target="_blank" href="https://statuspage.groovehq.com/knowledge_base/topics/webhook-notifications">Details on webhooks</a>.</p>
+      </div>
+      <div class="col-1-2" id="team-members">
+        <h3>Team Members</h3>
+        <p class="preface">Team members can be thought of as "admins". They are the people who have access to your account to create incidents, change the state of components, and much more.</p>
+        <p><strong>Account Owner</strong> - There is only 1 account owner on each account. The only difference between the account owner and a regular team member is that the account owner can remove team members.</p>
+        <p><strong>Access Controls</strong> - StatusPage doesn't currently have any access controls or granular permission levels for team members. All team members within the account have access to each page under the account and all of the features under each page.</p>
+        <p><strong>Removing Team Members</strong> - Only the account owner has permissions to remove other team members. If your account owner is no longer with the company, please reach out and we'll assist with these requests.</p>
+      </div>
+    </div>
+    <h3>Customizing</h3>
+    <p><strong>Basic Logo vs Cover Image</strong> - Use a basic layout that displays your logo at the top of the page, or give your page some flair with a custom header.</p>
+    <p><strong>CSS/HTML/Javascript</strong> - Customize the layout and structure of your page by writing your own css/html/JS.</p>
+    <p><strong>Other Customizations</strong> - Use a custom domain, translate your page into multiple languages, and set a custom 'from' address. <a target="_blank" href="https://statuspage.groovehq.com/knowledge_base/categories/customizing-your-page">Details on customizations</a>.</p>
+    <div class="flex_container no-wrap">
+      <div class="col-1-3-img"><img src="img/Custom1.png"></div>
+      <div class="col-1-3-img"><img src="img/Custom2.png"></div>
+      <div class="col-1-3-img"><img src="img/Custom3.png"></div>
+    </div>
+    <div class="flex_container no-wrap">
+      <div class="col-1-3-img"><img src="img/Custom4.png"></div>
+      <div class="col-1-3-img"><img src="img/Custom5.png"></div>
+      <div class="col-1-3-img"><img src="img/Custom6.png"></div>
+    </div>
+    <h3>Incident Communication Best Practices</h3>
+    <p><strong>Communicate Clearly</strong> - Focus on how exactly your customers are impacted by the incident. If not everyone is impacted, let that be known.</p>
+    <p><strong>Communicate Often</strong> - Once you create your incident, don't leave your customers hanging. Post updates regularly.</p>
+    <p><strong>Post Incident Report</strong> - We call these "postmortems" in StatusPage. After a major incident, it's always good to let your customers know what happened and what you're doing to avoid the incident from happening again.</p>
+  </section>
+  <hr>
+
+  <section>
+    <h2>Automating StatusPage</h2><a class="anchor" id="automating"></a>
+    <p class="preface">StatusPage doesn't do any direct monitoring of websites or servers but we do integrate with monitoring and alerting tools. Our API also allows you to create incidents, update components, manage subscribers, and more.</p>
+    <h3>Automation</h3>
+    <p><strong>Email Automation</strong> - Automatically update the status of your components by configuring your monitoring tool to send us emails. <a target="_blank" href="https://statuspage.groovehq.com/knowledge_base/topics/getting-started-with-email-automation">Details on email automation</a>.</p>
+    <p><strong>PagerDuty</strong> - Take your status page to the next level with our PagerDuty integration. Automatically create incidents and update components by configuring rules. <a target="_blank" href="https://statuspage.groovehq.com/knowledge_base/topics/pagerduty">Details on PagerDuty</a>.</p>
+    <p><strong>Other Integrations</strong> - More integrations are available for Pingdom, New Relic, OpsGenie, xMatters, VictorOps, and Pingometer. Each of these integrations offer functionality ranging from changing the state of components, to creating incidents. <a target="_blank" href="https://statuspage.groovehq.com/knowledge_base/categories/automating-components">Details on other integrations</a>.</p>
+    <h3>Public Metrics</h3>
+    <p><strong>Integrations</strong> - Display real-time metrics like uptime and response time on your status page by integrating Pingdom, New Relic, Datadog, or Librato.</p>
+    <p><strong>API</strong> - If you're not already using one of the above supported metrics providers, you can bring in metrics using our API. <a target="_blank" href="https://statuspage.groovehq.com/knowledge_base/categories/public-metrics">Details on Public Metrics</a>.</p>
+    <h3>ChatOps</h3>
+    <p><strong>HipChat</strong> - Keep your team in the loop by syncing StatusPage events (like who created an incident, or what the status was changed to) into your HipChat rooms. Control the noise by filtering out different types of events and actions. <a target="_blank" href="https://statuspage.groovehq.com/knowledge_base/topics/pipe-activity-log-into-hipchat-add-on-integration">Details on HipChat</a>.</p>
+  </section>
+
+  <footer>
+    <div class="flex_container">
+      <div class="col-1-5">
+        <h4>Navigation</h4>
+        <a href="https://www.statuspage.io/">Home</a>
+        <a href="https://www.statuspage.io/tour">Features</a>
+        <a href="https://www.statuspage.io/pricing">Pricing</a>
+        <a href="https://www.statuspage.io/customers">Customers</a>
+        <a href="https://www.statuspage.io/enterprise">Enterprise</a>
+      </div>
+      <div class="col-1-5">
+        <h4>Company</h4>
+        <a href="https://www.statuspage.io/careers">Jobs</a>
+        <a href="https://www.statuspage.io/about">About Us</a>
+        <a href="https://www.atlassian.com/software/statuspage/demo?utm_source=sp-footer&amp;partnerref=sp-footer">Attend A Demo Session</a>
+        <a href="https://better-error-pages.statuspage.io/">Better Error Pages</a>
+        <a href="https://www.statuspage.io/what-is-a-status-page">What Is A Status Page?</a>
+      </div>
+      <div class="col-1-5">
+        <h4>Community</h4>
+        <a target="_blank" href="http://blog.statuspage.io">Blog</a>
+        <a target="_blank" href="/startup-round-table">Startup Roundtable</a>
+        <a target="_blank" href="http://support-weekly.statuspage.io/">Support Weekly</a>
+        <a target="_blank" href="https://twitter.com/statuspageio">Twitter</a>
+      </div>
+      <div class="col-1-5">
+        <h4>Support</h4>
+        <a target="_blank" href="http://metastatuspage.com">Server Status</a>
+        <a target="_blank" href="http://doers.statuspage.io/">API Docs</a>
+        <a target="_blank" href="http://help.statuspage.io/">Knowledge Base</a>
+        <a href="mailto:hi@statuspage.io">Email Us</a>
+      </div>
+      <div class="col-1-5">
+        <h4>Legal</h4>
+        <a target="_blank" href="https://www.atlassian.com/legal/customer-agreement">Customer Agreement</a>
+        <a target="_blank" href="https://www.atlassian.com/legal/privacy-policy">Privacy Policy</a>
+        <a target="_blank" href="https://www.statuspage.io/security">Security</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/vendor/jquery-1.12.0.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
